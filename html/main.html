@@ -2,9 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script src="../js/hamming_copy.js"></script>
+    <script src="../js/code.js"></script>
+    <script src="../js/fix.js"></script>
     <title>Title</title>
 </head>
 <body>
-
+<p>
+    <input id="seqField" type="text" placeholder="your sequence"/>
+    <input id="encodeBtn" type="button" onclick="code()" value="code" />
+</p>
+<p>
+    <input id="extSeqField" type="text" placeholder="your coded sequence"/>
+    <input id="fixBtn" type="button" onclick="fix()" value="fix" />
+</p>
+<p>
+    <input id="informationField" readonly type="text">
+</p>
+<p>
+    <input id="restoredSeqField" readonly type="text">
+</p>
 </body>
 </html>
