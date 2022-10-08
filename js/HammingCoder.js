@@ -86,10 +86,3 @@ class HammingCoder {
         return seq;
     }
 }
-// let seq = [1,1,0,0];
-// let extSeq = HammingCoder.makeExtSeq(seq);
-// let controlBitsIndices = HammingCoder.getControlBitIndices(extSeq);
-// extSeq = HammingCoder.countControlBits(extSeq, controlBitsIndices);
-// console.log(extSeq);
-// let fixedExtSeq = HammingCoder.fixExtSeq([0, 1, 1, 1, 1, 0, 0], controlBitsIndices);
-// console.log('fes', fixedExtSeq)
