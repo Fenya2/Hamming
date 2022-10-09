@@ -19,7 +19,9 @@ function fix() {
     }
     let oldSeq = inputSeq;
     inputSeq = HammingCoder.fixExtSeq(inputSeq, HammingCoder.getControlBitIndices(inputSeq));
+    let mistakeNum = 0;
+    for(let i = 0; i < inputSeq.length; i++) if(inputSeq[i] !== oldSeq[i]) mistakeNum = i+1;
     inputField.value = inputSeq.join('');
-    infField.value = oldSeq.join('') + '\n fixed';
+    infField.value = oldSeq.join('') + `\n fixed. mistake in ${mistakeNum} bit`;
     restoredSeqField.value = HammingCoder.extractSequence(inputSeq).join('');
 }
